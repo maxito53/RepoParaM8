@@ -1,0 +1,181 @@
+/* Hoja de estilos única para todas las páginas */
+
+@font-face {
+    font-family: RedBurger;
+    src: url(../tipografia/RED\ BURGER.otf)
+}
+
+body {
+    font-family: sans-serif;
+    background-image: url('../img/quesodefondo.jpg');
+    margin: 0;
+}
+
+#contenedor {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 50em;
+    background-color: beige;
+    border-left: 0.3em solid brown;
+    border-right: 0.3em solid brown;
+    padding: 1em;
+    min-height: 100vh; /* hace que el contenedor se expanda hasta el final si se hace - la pantalla */
+}
+
+img.logo {
+    max-width: 100%;
+    height: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+    /* Centrar imagen*/
+    display: flex;
+    justify-content: center;
+}
+
+section img {
+    max-width: 50%;
+    height: auto;
+    float: right;
+    margin-right: 20px;
+    margin-left: 20px;
+    
+    position:relative;
+}
+
+h1 {
+    font-family: RedBurger;
+    color: rgb(98, 5, 5);
+    text-shadow: 0.1em 0.05em 0 #0008;
+    text-align: center;
+    font-size: 400%;
+    margin-top: 0.25em;
+    margin-bottom: 0.25em;
+    background-image: url(../img/quesoagujeros.jpg);
+    background-size: 50%;
+    border-radius: 1rem;
+}
+
+/* ------- Index ------- */
+
+nav ul {
+    list-style-type: none; /* sacar los inferiores de nav de la lista */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+}
+
+nav > ul > li {
+    border: 0;
+    display: inline-block;
+    margin: 0;
+    padding: 0.5em;
+    position: relative;
+    background-color: brown;
+    width: 15em; /* Ancho de los recuadros de la lista */
+}
+
+li > a {
+    text-decoration: none; /* quita la raya del enlace */ 
+    color:inherit; /*quita el color predeterminado del enlace */
+    font-family: RedBurger;
+    color: white;
+}
+
+nav li:hover {
+    background-color: black; /* negro al pasar por encima */
+}
+
+nav > ul ul {
+    display: none; /* nos se ven los ul inferiores de ul */ 
+}
+
+nav li:hover > ul {
+    display: block;
+    position: absolute;
+    top: 2.7em;
+    left: 0;
+    background-color: brown;
+    width: 16em; /* Ancho de los recuadros de la lista desplegada*/
+}
+
+/* --------------------- */
+
+section {
+    background-color:bisque;
+    border: 0.7rem goldenrod;
+    border-radius: 1rem;
+    padding: -3em;
+    margin: 0;
+    border-radius: 1rem;
+    padding-bottom: 10px;
+
+}
+
+#intro {
+    padding-top: 10px;
+    text-align: center;
+}
+
+h2 {
+    font-family: RedBurger;
+    background-color: darkgoldenrod;
+    color: black;
+    border-radius: 0.5rem 0.5rem 0 0;
+    padding: 0.3em 1em;
+    border-bottom: 0.2rem solid black;
+}
+
+p {
+    padding: 0.3em 1em;
+}
+
+/* ------- links ------- */
+
+section a.descarga {
+    font-family: RedBurger;
+    padding: 10px;
+    background-color: brown;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-right: 20px;
+    margin-bottom: 15px;
+}
+
+#descarga {
+    display: flex;
+    justify-content: right;
+    overflow: hidden;
+}
+  
+
+section a.descarga:hover {
+    background-color: black;
+}
+
+/* --------------------- */
+
+footer a {
+    font-family: RedBurger;
+    padding: 1em;
+    background-color: brown;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+footer {
+    padding: 1em;
+    margin-bottom: 1em;
+    margin-top: 1em;
+    display: flex;
+    justify-content: center;
+}
+  
+
+footer a:hover {
+    background-color: black;
+}
